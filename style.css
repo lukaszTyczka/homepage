@@ -43,8 +43,33 @@ footer {
     background-color: #55dde0;
 }
 
-.nav-link {
+.navigation {
+    background-color: #ff6f59;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation__link {
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    /* text-shadow: 0px -1px 0px #5b6178; */
+    font-size: 1.1em;
+}
+
+.navigation__link:hover {
+    background-color: #23395b;
     color: #ff6f59;
+}
+
+.navigation__link--homePage {
+    margin-left: 50px;
+    font-weight: bold;
 }
 
 .img-me {
