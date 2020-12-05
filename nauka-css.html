@@ -16,24 +16,25 @@
         </nav>
     </header>
     <main>
-        <header>
-            <h1>Łukasz Tyczka - strona domowa</h1>
-            <img class="img-me" src="img/Me.jpg" alt="Zdjęcie">
+        <header class="welcome-section">
+            <h1 class="welcome-section__title">Łukasz Tyczka - strona domowa</h1>
+            <img class="welcome-section__image" src="img/Me.jpg" alt="Zdjęcie">
         </header>
-        <section>
-            <h2>CSS</h2>
-            <article>
-                <h3>selector dla classy i id</h3>
-                <p>Selector dla classy .class-name, dla id #id-name</p>
+        <section class="article">
+            <h2 class="article__title">CSS</h2>
+            <article class="sub-article">
+                <h3 class="sub-article__title">selector dla classy i id</h3>
+                <p class="sub-article__content">Selector dla classy .class-name, dla id #id-name</p>
             </article>
             <article>
-                <h3>Jak działa selekcja selectorów</h3>
-                <p>Po pierwsze nie używaj !important. Po drugie nie styluj w inlinie. Pamietaj, że bardziej specyficzny
+                <h3 class="sub-article__title">Jak działa selekcja selectorów</h3>
+                <p class="sub-article__content">Po pierwsze nie używaj !important. Po drugie nie styluj w inlinie.
+                    Pamietaj, że bardziej specyficzny
                     selector, wypiera mniej specyficzny. Terminal i inline wręcz są zawsze game changerem!</p>
             </article>
         </section>
 
-        <footer>
+        <footer class="footer">
             Strona domowa - &#169;Tyczka Łukasz.
         </footer>
     </main>
