@@ -47,6 +47,10 @@ body {
     margin-right: auto;
     margin-bottom: 10px;
 }
+.welcome-section__content {
+    color: #f26419;
+    text-align: center;
+}
 
 .article {
     border: 1px solid #f6ae2d;
