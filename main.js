@@ -4,6 +4,6 @@ console.log(
     `Cześć witaj na mojej stronie nazywam się ${firstName} i mam ${age} lata!`
 );
 
-let content = document.querySelector('.welcome-section__content');
+let content = document.querySelector('.welcome-section__content--js');
 
 content.innerHTML = `Cześć witaj na mojej stronie nazywam się ${firstName} i mam ${age} lata!`;

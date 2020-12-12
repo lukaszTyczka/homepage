@@ -1,30 +1,54 @@
+/* add always section */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+/* end section */
+
 body {
-    background-color: #23395b;
+    background-color: #ffffff;
+    background-image: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #1400ff 1%,
+        #020612 100%
+    );
+
     margin: 0px;
 }
 
 .navigation {
-    background-color: #ff6f59;
+    background-color: #fe9000;
     height: 40px;
     border-bottom: 1px solid #fff;
     position: fixed;
+    display: inline-flex;
+    justify-content: center;
     top: 0;
     width: 100%;
 }
 
 .navigation__link {
     color: #fff;
-    display: inline-block;
     height: 100%;
+    width: auto;
     padding: 0 15px;
     text-decoration: none;
-    /* text-shadow: 0px -1px 0px #5b6178; */
+    text-align: center;
     font-size: 1.1em;
+    line-height: 35px;
 }
 
 .navigation__link:hover {
-    background-color: #23395b;
-    color: #ff6f59;
+    background-color: #1400ff;
+    color: #fe9000;
+    border-radius: 7px;
 }
 
 .navigation__link--home-page {
@@ -36,7 +60,7 @@ body {
     margin-top: 50px;
 }
 .welcome-section__title {
-    color: #f26419;
+    color: #fe9000;
     font-size: 3em;
     text-align: center;
 }
@@ -48,15 +72,16 @@ body {
     margin-bottom: 10px;
 }
 .welcome-section__content {
-    color: #f26419;
+    color: #fe9000;
     text-align: center;
+    font-size: 1.4em;
 }
 
 .article {
-    border: 1px solid #f6ae2d;
+    border: 1px solid #fe9000;
     margin: 20px auto 15px auto;
     padding: 0px 10px 10px 10px;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .article:last-of-type {
@@ -65,7 +90,7 @@ body {
 
 .article__title {
     margin-block-start: 0.2em;
-    color: #f26419;
+    color: #fe9000;
     font-size: 2.2em;
     padding-left: 20px;
     text-align: center;
@@ -73,17 +98,17 @@ body {
 
 .article__content {
     font-size: 1.1em;
-    color: #ff6f59;
+    color: #fe9000;
     padding-left: 10%;
 }
 
 .sub-article__title {
-    color: #f26419;
+    color: #fe9000;
     margin-left: 5%;
 }
 .sub-article__content {
     font-size: 1.1em;
-    color: #ff6f59;
+    color: #fe9000;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -93,8 +118,8 @@ body {
     position: fixed;
     width: 100%;
     font-size: 1.1em;
-    color: #23395b;
+    color: #fe9000;
     bottom: 0px;
     left: auto;
-    background-color: #55dde0;
+    background-color: #020612;
 }
