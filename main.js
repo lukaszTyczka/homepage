@@ -33,3 +33,15 @@ const ExampleClass = {
 
 ExampleClass.showlog(ExampleClass.name, ExampleClass.age);
 ExampleClass.showlog2(ExampleClass.name, ExampleClass.age);
+
+const hamburgerButton = document.querySelector(
+    '.navigation__hamburger-button--js'
+);
+
+hamburgerButton.addEventListener('click', () => {
+    const menuElements = document.querySelectorAll('.navigation__link');
+
+    menuElements.forEach((menuElement) => {
+        menuElement.classList.toggle('navigation__link-invisible');
+    });
+});
