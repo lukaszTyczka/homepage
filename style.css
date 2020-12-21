@@ -13,19 +13,27 @@ html {
 /* 1400ff */
 body {
     background-color: #ffffff;
-    background-image: linear-gradient(180deg, #8d0002 0%, #ff0004 100%);
+    background: linear-gradient(180deg, #8d0002 0%, #ff0004 100%);
+    background-attachment: fixed;
     margin: 0px;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
 }
-
 .navigation {
     background-color: #fe9000;
     min-height: 40px;
     border-bottom: 1px solid #fff;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 0;
+    grid-area: header;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto auto auto 5fr;
 }
 
 .navigation__link {
@@ -49,10 +57,14 @@ body {
 
 .navigation__link--home-page {
     font-weight: bold;
+    margin-left: auto;
 }
 
 .welcome-section {
-    margin-top: 50px;
+    grid-area: aside;
+}
+.main {
+    grid-area: main;
 }
 /* 020612 */
 .welcome-section__title {
@@ -81,9 +93,9 @@ body {
     border: 1px solid #fe9000;
     margin: 20px auto 15px auto;
     padding: 0px 10px 10px 10px;
-    max-width: 1000px;
     background-color: #fe9000;
     color: #020612;
+    max-width: 1000px;
     border-radius: 15px;
     -webkit-box-shadow: 3px 3px 5px 6px #020612; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #020612; /* Firefox 3.5 - 3.6 */
@@ -117,8 +129,8 @@ body {
 }
 
 .footer {
+    grid-area: footer;
     text-align: center;
-    position: fixed;
     width: 100%;
     font-size: 1.1em;
     color: #fe9000;
