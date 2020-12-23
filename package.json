@@ -1,23 +1,27 @@
 {
-  "name": "homePage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lukaszTyczka/homepage.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lukaszTyczka/homepage/issues"
-  },
-  "homepage": "https://github.com/lukaszTyczka/homepage#readme",
-  "devDependencies": {
-    "cowsay": "^1.4.0"
-  }
+    "name": "homePage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "sass": "node-sass -w scss/style.scss style.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lukaszTyczka/homepage.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lukaszTyczka/homepage/issues"
+    },
+    "homepage": "https://github.com/lukaszTyczka/homepage#readme",
+    "devDependencies": {
+        "cowsay": "^1.4.0"
+    },
+    "dependencies": {
+        "node-sass": "^5.0.0"
+    }
 }
